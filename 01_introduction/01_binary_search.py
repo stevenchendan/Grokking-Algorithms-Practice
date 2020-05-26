@@ -20,7 +20,7 @@ class Solution():
       
     return None
 
-
+#test
 test_array = [1,2,3,4,5,6]
 print(Solution.binary_search(test_array, 5))
 print(Solution.binary_search(test_array, -1))
