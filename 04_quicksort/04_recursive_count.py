@@ -1,5 +1,4 @@
 def recursive_count(list):
-  count = 0
   if list == []:
     return 0
   return 1 + recursive_count(list[1:])

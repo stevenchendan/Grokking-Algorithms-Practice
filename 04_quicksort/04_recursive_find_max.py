@@ -13,6 +13,3 @@ def max_number(list):
 
 if __name__ == "__main__":
   print(max_number([2, 100, 101, 200]))
-
-
-#TODO: write unit test
