@@ -1,3 +1,5 @@
+import time
+start_time = time.time()
 def quick_sort(arr):
   if len(arr) < 2:
     return arr
@@ -11,3 +13,4 @@ def quick_sort(arr):
 
 if __name__ == "__main__":
   print(quick_sort([200, 100, 101, 20]))
+  print((time.time() - start_time) * 1000)
