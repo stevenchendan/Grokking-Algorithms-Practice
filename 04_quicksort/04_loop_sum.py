@@ -4,4 +4,6 @@ def sum(arr):
     total += i
   return total
 
-print(sum([1, 2, 3, 4]))
+if __name__ == "__main__":
+  test_array = [1, 2, 3, 4]
+  print(sum(test_array))

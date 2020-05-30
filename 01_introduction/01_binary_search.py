@@ -21,9 +21,8 @@ class Solution():
     return None
 
 
-#TODO:write proper test cases
+if __name__ == "__main__":
+  test_array = [1,2,3,4,5,6]
+  print(Solution.binary_search(test_array, 5))
+  print(Solution.binary_search(test_array, -1))
 
-#test
-test_array = [1,2,3,4,5,6]
-print(Solution.binary_search(test_array, 5))
-print(Solution.binary_search(test_array, -1))

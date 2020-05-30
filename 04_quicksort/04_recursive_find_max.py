@@ -7,10 +7,12 @@ def max_number(list):
     return list[0]
   #recursive case
   else:
+    #
     sub_max = max(list[1:])
     return list[0] if list[0] > sub_max else sub_max
 
-print(max_number([2, 100, 101, 200]))
+if __name__ == "__main__":
+  print(max_number([2, 100, 101, 200]))
 
 
 #TODO: write unit test

@@ -5,4 +5,6 @@ def countdown(number):
   else:
     countdown(number-1)
 
-countdown(5)
+
+if __name__ == "__main__":
+  countdown(5)

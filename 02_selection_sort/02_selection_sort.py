@@ -18,8 +18,7 @@ def selection_sort(array):
     result.append(array.pop(smallest))
   return result
 
-#TODO:write proper test cases
 
-#test
-test_array = [3,2,3,1,5,6]
-print(selection_sort(test_array))
+if __name__ == "__main__":
+  test_array = [3,2,3,1,5,6]
+  print(selection_sort(test_array))
