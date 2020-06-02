@@ -17,6 +17,7 @@ def check_mango_seller(name):
 def search_mango_seller(name):
   search_queue = deque()
   search_queue += graph["you"]
+  search = []
   while search_queue:
     person = search_queue.popleft()
     if check_mango_seller(person):
@@ -24,6 +25,7 @@ def search_mango_seller(name):
       return True
     else:
       search_queue += graph[person]
+      search.append(person)
   return False
 
 
