@@ -17,15 +17,16 @@ def check_mango_seller(name):
 def search_mango_seller(name):
   search_queue = deque()
   search_queue += graph["you"]
-  search = []
+  searched = []
   while search_queue:
     person = search_queue.popleft()
-    if check_mango_seller(person):
-      print(person + " is a mango seller!")
-      return True
-    else:
-      search_queue += graph[person]
-      search.append(person)
+    if not person in searched:
+      if check_mango_seller(person):
+        print(person + " is a mango seller!")
+        return True
+      else:
+        search_queue += graph[person]
+        searched.append(person)
   return False
 
 
