@@ -1,16 +1,6 @@
 from collections import deque
 
-graph = {}
-graph["you"] = ["alice", "bob", "claire"]
-graph["bob"] = ["anuj", "peggy"]
-graph["alice"] = ["peggy"]
-graph["claire"] = ["thom", "jonny"]
-graph["anuj"] = []
-graph["peggy"] = []
-graph["thom"] = []
-graph["jonny"] = []
-
-#check if the name is ending with letter 'm'.
+#check if the name is ending with letter 'm'. Hard coded logic
 def check_mango_seller(name):
   return name[-1] == 'm'
 
@@ -31,4 +21,15 @@ def search_mango_seller(name):
 
 
 if __name__ == "__main__":
+  #generate testing data
+  graph = {}
+  graph["you"] = ["alice", "bob", "claire"]
+  graph["bob"] = ["anuj", "peggy"]
+  graph["alice"] = ["peggy"]
+  graph["claire"] = ["thom", "jonny"]
+  graph["anuj"] = []
+  graph["peggy"] = []
+  graph["thom"] = []
+  graph["jonny"] = []
+
   search_mango_seller("you")
